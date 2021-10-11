@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  cryptochat:
+    image: cryptochat
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8765:8765
